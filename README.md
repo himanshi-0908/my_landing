@@ -28,8 +28,8 @@ Clone the repository and install dependencies:
 bash
 Copy
 Edit
-git clone https://github.com/your-username/my-portfolio.git
-cd my-portfolio
+git clone 
+cd my-portfolio https://github.com/himanshi-0908/my_landing
 npm install
 npm run dev
 Then open http://localhost:3000 to view it in the browser.
