@@ -373,126 +373,148 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
-
       {/* Enhanced Projects Section */}
-      <section id="projects" className={`py-20 ${darkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className={`text-4xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-              Featured Projects
-            </h2>
-            <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'} max-w-2xl mx-auto`}>
-              Innovative solutions that showcase my technical expertise and problem-solving abilities
-            </p>
-          </div>
+<section id="projects" className={`py-20 ${darkMode ? 'bg-gray-900' : 'bg-gray-50'}`}>
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-16">
+      <h2 className={`text-4xl font-bold mb-4 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+        Featured Projects
+      </h2>
+      <p className={`text-lg ${darkMode ? 'text-gray-400' : 'text-gray-600'} max-w-2xl mx-auto`}>
+        Innovative solutions that showcase my technical expertise and problem-solving abilities
+      </p>
+    </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-            {[
-              {
-                title: 'Vani_AI',
-                description: 'Real-time speech-to-speech translation across multiple Indian languages with 95% accuracy rate.',
-                tech: ['React', 'TypeScript', 'Google Cloud', 'Speech API'],
-                icon: Code,
-                color: 'from-blue-500 to-cyan-500',
-                metrics: ['95% Accuracy', '12 Languages', '< 2s Latency']
-                link: 'https://vani-ai-teal.vercel.app/'
-              },
-              {
-                title: 'IoT Device Management',
-                description: 'MQTT-based system managing 1000+ IoT devices with real-time monitoring and predictive analytics.',
-                tech: ['MQTT', 'Python', 'PostgreSQL', 'IoT'],
-                icon: Database,
-                color: 'from-green-500 to-emerald-500',
-                metrics: ['1000+ Devices', '99.9% Uptime', 'Real-time Analytics']
-              },
-              {
-                title: 'AI Fitness Suite',
-                description: 'Computer vision-powered fitness tracking with pose detection and personalized AI coaching.',
-                tech: ['AI/ML', 'MediaPipe', 'OpenCV', 'Mobile'],
-                icon: Cpu,
-                color: 'from-purple-500 to-pink-500',
-                metrics: ['98% Pose Accuracy', '50+ Exercises', 'AI Coaching']
-              },
-              {
-  title: 'Agri_AI',
-  description: 'AI-powered smart farming system that helps farmers detect crop diseases, analyze soil quality, recommend suitable crops, provide expense tracker, and shopping options for tools and seeds.',
-  tech: ['React', 'Python', 'TensorFlow', 'Flask', 'Google AI', 'Numpy', 'Scikit-Learn', 'Machine-Learning'],
-  icon: Leaf,
-  color: 'from-green-600 to-lime-500',
-  metrics: ['98% Detection Accuracy', 'Real-time Monitoring', 'Multi-Crop Support']
-},
-{
-  title: 'MediPredict_AI',
-  description: 'AI-powered health analyzer that predicts the risk of heart disease and diabetes using ML models with high accuracy.',
-  tech: ['Python', 'scikit-learn', 'Streamlit', 'Pandas'],
-  icon: Activity, // You can use another icon like `Heartbeat` if available
-  color: 'from-pink-500 to-red-500',
-  metrics: ['92% Accuracy', '2 Disease Models', 'Real-time Results']
-}, 
-{
-  title: 'LearnWise_AI',
-  description: 'Personalized AI learning companion offering tailored quizzes, coding help, and real-time explanations for students across all levels.',
-  tech: ['JavaScript', 'Gemini API', 'HTML/CSS', 'Google Colab'],
-  icon: GraduationCap,
-  color: 'from-indigo-500 to-purple-600',
-  metrics: ['Instant Feedback', 'Multi-bot System', 'Adaptive Learning']
-}
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      {[
+        {
+          title: 'Vani_AI',
+          description: 'Real-time speech-to-speech translation across multiple Indian languages with 95% accuracy rate.',
+          tech: ['React', 'TypeScript', 'Google Cloud', 'Speech API'],
+          icon: Code,
+          color: 'from-blue-500 to-cyan-500',
+          metrics: ['95% Accuracy', '12 Languages', '< 2s Latency'],
+          link: 'https://vani-ai-teal.vercel.app/'
+        },
+        {
+          title: 'IoT Device Management',
+          description: 'MQTT-based system managing 1000+ IoT devices with real-time monitoring and predictive analytics.',
+          tech: ['MQTT', 'Python', 'PostgreSQL', 'IoT'],
+          icon: Database,
+          color: 'from-green-500 to-emerald-500',
+          metrics: ['1000+ Devices', '99.9% Uptime', 'Real-time Analytics']
+        },
+        {
+          title: 'AI Fitness Suite',
+          description: 'Computer vision-powered fitness tracking with pose detection and personalized AI coaching.',
+          tech: ['AI/ML', 'MediaPipe', 'OpenCV', 'Mobile'],
+          icon: Cpu,
+          color: 'from-purple-500 to-pink-500',
+          metrics: ['98% Pose Accuracy', '50+ Exercises', 'AI Coaching']
+        },
+        {
+          title: 'Agri_AI',
+          description: 'AI-powered smart farming system that helps farmers detect crop diseases, analyze soil quality, recommend suitable crops, provide expense tracker, and shopping options for tools and seeds.',
+          tech: ['React', 'Python', 'TensorFlow', 'Flask', 'Google AI', 'Numpy', 'Scikit-Learn', 'Machine-Learning'],
+          icon: Leaf,
+          color: 'from-green-600 to-lime-500',
+          metrics: ['98% Detection Accuracy', 'Real-time Monitoring', 'Multi-Crop Support'],
+          link: 'https://agri-ai-yeum.vercel.app/'
+        },
+        {
+          title: 'MediPredict_AI',
+          description: 'AI-powered health analyzer that predicts the risk of heart disease and diabetes using ML models with high accuracy.',
+          tech: ['Python', 'scikit-learn', 'Streamlit', 'Pandas'],
+          icon: Activity, 
+          color: 'from-pink-500 to-red-500',
+          metrics: ['92% Accuracy', '2 Disease Models', 'Real-time Results'],
+          link: 'https://diseasespred-web.streamlit.app/'
+        }, 
+        {
+          title: 'LearnWise_AI',
+          description: 'Personalized AI learning companion offering tailored quizzes, coding help, and real-time explanations for students across all levels.',
+          tech: ['JavaScript', 'Gemini API', 'HTML/CSS', 'Google Colab'],
+          icon: GraduationCap,
+          color: 'from-indigo-500 to-purple-600',
+          metrics: ['Instant Feedback', 'Multi-bot System', 'Adaptive Learning']
+        }
+      ].map((project, index) => (
+        <Card 
+          key={project.title} 
+          className={`group ${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white'} shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden`}
+        >
+          <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
+          
+          <CardHeader className="relative">
+            <div className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-br ${project.color} rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+              <project.icon className="w-6 h-6 text-white" />
+            </div>
+            
+            <CardTitle className={`text-xl mb-2 ${darkMode ? 'text-white' : 'text-gray-900'} group-hover:text-blue-600 transition-colors duration-300`}>
+              {project.title}
+            </CardTitle>
+            <CardDescription className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>
+              {project.description}
+            </CardDescription>
+          </CardHeader>
+
+          <CardContent className="space-y-4">
+            <div className="grid grid-cols-3 gap-2 text-center">
+              {project.metrics.map((metric, i) => (
+                <div key={i} className={`p-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-50'}`}>
+                  <div className={`text-xs font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
+                    {metric}
+                  </div>
+                </div>
+              ))}
+            </div>
+            
+            <div className="flex flex-wrap gap-2">
+              {project.tech.map((tech) => (
+                <Badge key={tech} variant="secondary" className="text-xs">
+                  {tech}
+                </Badge>
+              ))}
+            </div>
+            
+            <div className="flex space-x-2 pt-2">
+              {project.link && (
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex-1"
+                >
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Live Demo
+                  </Button>
+                </a>
+              )}
+              {/* <Button variant="outline" size="sm" className="flex-1">
+                <Github className="w-4 h-4 mr-2" />
+                Code
+              </Button> */}
+            </div>
+          </CardContent>
+        </Card>
+      ))}
+    </div>
+  </div>
+</section>
 
 
+     
+              
+              
 
-
-            ].map((project, index) => (
-              <Card key={project.title} className={`group ${darkMode ? 'bg-gray-800 border-gray-700' : 'bg-white'} shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden`}>
-                <div className={`h-2 bg-gradient-to-r ${project.color}`}></div>
                 
-                <CardHeader className="relative">
-                  <div className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-br ${project.color} rounded-lg flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                    <project.icon className="w-6 h-6 text-white" />
-                  </div>
-                  
-                  <CardTitle className={`text-xl mb-2 ${darkMode ? 'text-white' : 'text-gray-900'} group-hover:text-blue-600 transition-colors duration-300`}>
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className={`${darkMode ? 'text-gray-400' : 'text-gray-600'} leading-relaxed`}>
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent className="space-y-4">
-                  <div className="grid grid-cols-3 gap-2 text-center">
-                    {project.metrics.map((metric, i) => (
-                      <div key={i} className={`p-2 rounded-lg ${darkMode ? 'bg-gray-700' : 'bg-gray-50'}`}>
-                        <div className={`text-xs font-semibold ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                          {metric}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <Badge key={tech} variant="secondary" className="text-xs">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  
-                  <div className="flex space-x-2 pt-2">
-                    <Button variant="outline" size="sm" className="flex-1 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Live Demo
-                    </Button>
-                    {/*<Button variant="outline" size="sm" className="flex-1">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </Button>*/}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+                
+              
 
       {/* Enhanced Skills Section */}
       <section id="skills" className={`py-20 ${darkMode ? 'bg-gray-800' : 'bg-white'}`}>
