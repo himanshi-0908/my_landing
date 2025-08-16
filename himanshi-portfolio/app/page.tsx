@@ -395,6 +395,7 @@ export default function Portfolio() {
                 icon: Code,
                 color: 'from-blue-500 to-cyan-500',
                 metrics: ['95% Accuracy', '12 Languages', '< 2s Latency']
+                link: 'https://vani-ai-teal.vercel.app/'
               },
               {
                 title: 'IoT Device Management',
